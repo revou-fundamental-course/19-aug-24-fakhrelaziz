@@ -181,6 +181,15 @@ main {
     width: 100%;
 }
 
+@media screen and (max-width: 1366px) {
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 .content {
     display: flex;
     justify-content: center;
@@ -193,6 +202,31 @@ main {
     text-align: center;
     text-shadow: 2px 2px 0px black;
     z-index: 1;
+}
+
+.foto-kepsek {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 150px;
+    box-shadow: 0 0 25px #00ffee;
+}
+
+.kepsek {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+    letter-spacing: 2px;
+    font-family: cursive;
+}
+
+.kepsek1 {
+    color: #ededed;
+    letter-spacing: 2px;
+    font-family: cursive;
 }
 
 .content h1 {
@@ -227,7 +261,6 @@ main {
     top: 106%;
     margin-block-start: -13px;
     margin-top: -28px;
-
 }
 
 #about {
@@ -237,7 +270,7 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 
@@ -249,7 +282,7 @@ main {
     color: #ededed;
     margin: 100px auto;
     width: 80%;
-    margin-top: -15px;
+    margin-top: -5px;
 
 }
 
@@ -305,7 +338,7 @@ main {
 #gambar1 {
     position: static;
     border-radius: 20px;
-    box-shadow: 1px 1px 0px rgb(121, 119, 117);
+    box-shadow: 0 0 20px #00ffee;
     position: relative;
     margin-left: 10px;
     border: 3px solid rgb(136, 152, 245);
@@ -315,7 +348,7 @@ main {
 #gambar2 {
     position: static;
     border-radius: 20px;
-    box-shadow: 1px 1px 0px rgb(121, 119, 117);
+    box-shadow: 0 0 20px #00ffee;
     position: relative;
     margin-left: 10px;
     border: 3px solid rgb(136, 152, 245);
