@@ -260,7 +260,7 @@ main {
 }
 }
 #about {
-    color: rgb(136, 152, 245);
+    color: rgb(145, 149, 173);
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -355,4 +355,18 @@ main {
     max-height: 600px;
     border: 1px solid black;
     top: 500px;
+}
+@media screen and (max-width: 700px) {
+.achievment {
+    position: absolute;
+    margin-bottom: -50%;
+    color: rgb(145, 149, 173);
+    margin-top: 100%;
+    
+}
+}
+.achievment {
+    position: absolute;
+    margin-bottom: -40%;
+    color: rgb(145, 149, 173);
 }
