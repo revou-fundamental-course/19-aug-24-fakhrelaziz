@@ -528,3 +528,46 @@ main {
     transition: 0.3s ease-in-out;
     transition-delay: 0.4s;
 }
+
+/* messages */
+.message {
+    border: 2px solid wheat;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40%;
+    left: 10px;
+}
+
+#komen {
+    height: 100px;
+    width: 60%;
+}
+
+.contactme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 30%;
+    background-color: black;
+    color: #ededed;
+    
+}
+
+.validasi {
+    border: 2px solid wheat;
+    margin-top: 10px;
+    width: 50%;
+    display: block;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.next-slide {
+    position: relative;
+    margin-top: 50%;
+    right: 40%;
+}
+

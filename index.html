@@ -23,9 +23,9 @@
             <section class="bar">
                 <span>
                     <a href="#">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">ACHIEVMENT</a>
-                    <a href="#">CONTACT ME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#gacukupwaktu">ACHIEVMENT</a>
+                    <a href="#contactme">CONTACT ME</a>
 
                 </span>
             </section>
@@ -70,14 +70,7 @@
             </div>
         </div>
 
-        <div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-        </div>
-        <h2 class="judul-achievment">ACHIEVMENT</h2>
+        <h2 id="achievment" class="judul-achievment">ACHIEVMENT</h2>
         <div class="achievment">
             <div class="achievment1">
                 <span class="nama-achievment">BINTANG RADIO RRI INDONESIA 2022
@@ -87,7 +80,7 @@
                 <span class="nama-achievment">LOMBA PERPUSTAKAAN SEKOLAH<br>2022
                 </span>
             </div>
-            <div class="achievment3">
+            <div class="achievment3" id="gacukupwaktu">
                 <span class="nama-achievment">STUDENT FUTSAL BATTLE tahun 2022
                 </span>
             </div>
@@ -102,7 +95,43 @@
                 </span>
             </div>
         </div>
+        <header>
+            <h1 id="contactme">Message Us</h1>
+        </header>
+        <section class="contactme">
+            <form class="message">
+                <div>
+                    <label for="name">Nama lengkap : <br></label>
+                    <input type="text" name="name" id="name">
+                </div><br>
+                <div>
+                    <label for="email">Email aktif : <br></label>
+                    <input type="email" name="email" id="email">
+                </div><br>
+                <div>
+                    <label for="nowa">No.WA : <br></label>
+                    <input type="number" name="" id="nowa">
+                </div><br>
+    
+                <div>
+                    <label for="komen">Messages : <br></label>
+                    <input type="text" name="komen" id="komen">
+                </div><br>
+                <button type="button" onclick="formValidation(3)">Submit</button>
+            </form>
+    
+            <div class="validasi">
+                Nama: <span id="result"></span><br><br>
+                Email: <span id="result1"></span><br><br>
+                No.wa: <span id="result2"></span><br><br>
+                Messages: <span id="result3"></span><br><br>
+            </div><br>
+        </section>
+        <script src="js\script.js"></script>
     </content>
+
+   
+    
 
     <footer>
 
