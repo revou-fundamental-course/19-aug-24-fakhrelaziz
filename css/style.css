@@ -11,24 +11,28 @@
 html {
     font-size: 62, 5%;
 }
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 800px) {
     body {
         background: url('../asset/pexels-bogdan-groshev-722715367-22776039.jpg') no-repeat center;
         background-size: cover;
         margin-right: auto;
         width: 100%;
-        height: 600vh;
+        height: 700vh;
+    }
 }
+
+@media screen and (max-width: 1366px) and (min-width:800px) {
+    body {
+        background: url('../asset/pexels-bogdan-groshev-722715367-22776039.jpg') no-repeat center;
+        background-size: cover;
+        margin-right: auto;
+        width: 100%;
+        height: 400vh;
+        background-color: black;
+    }
 }
-@media screen and (max-width: 1366px) and (min-width:800px){
-body {
-    background: url('../asset/pexels-bogdan-groshev-722715367-22776039.jpg') no-repeat center;
-    background-size: cover;
-    margin-right: auto;
-    width: 100%;
-    height: 400vh;
-}
-}
+
 nav {
     display: flex;
     justify-content: center;
@@ -40,16 +44,18 @@ nav {
     width: 100%;
     filter: drop-shadow(0 0.5mm 1mm rgb(0, 0, 0));
     z-index: 200;
-    background-color: black;
-
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 -2px 5px #def;
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     header {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
 }
@@ -65,18 +71,38 @@ header {
     top: 0;
 }
 
-.logo {
-    border-radius: 30px;
-    width: 42px;
-    height: 42px;
-    background: url('../asset/logosma5.png')no-repeat center;
-    cursor: default;
-    position: relative;
-    margin-left: 1%;
-    margin-right: 65%;
-    transition-delay: 0.3s;
-    transition: 0.3s ease-in-out;
-    z-index: 300;
+@media screen and (max-width: 800px) {
+    .logo {
+        border-radius: 30px;
+        width: 42px;
+        height: 42px;
+        background: url('../asset/logosma5.png')no-repeat center;
+        cursor: default;
+        position: static;
+        margin-left: -175px;
+        transition-delay: 0.3s;
+        transition: 0.3s ease-in-out;
+        z-index: 300;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width:800px) {
+    .logo {
+
+        border-radius: 30px;
+        width: 42px;
+        height: 42px;
+        background: url('../asset/logosma5.png')no-repeat center;
+        cursor: default;
+        position: relative;
+        left: 1%;
+        transition-delay: 0.3s;
+        transition: 0.3s ease-in-out;
+        z-index: 300;
+    }
 }
 
 .infologo {
@@ -116,12 +142,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
     position: relative;
-    left: 250%;
-    top: -6px;
+    margin-left: 130px;
+    top: -4px;
     white-space: nowrap;
-    max-width: 15em;
 }
 
 #text1 {
@@ -172,29 +196,31 @@ a:hover:after {
 }
 
 /* bagian content */
-@media screen and (min-width: 100px) and (max-width:2000px){
-main {
-    color: rgb(145, 149, 173);
-    z-index: 0;
-    background: url('../asset/sma508.jpg')no-repeat center;
-    background-size: cover;
-    height: 100%;
-    font-size: 100%;
-    position: absolute;
-    top: 11%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: default;
-    width: 100%;
+@media screen and (min-width: 100px) and (max-width:2000px) {
+    main {
+        color: rgb(145, 149, 173);
+        z-index: 0;
+        background: url('../asset/sma508.jpg')no-repeat center;
+        background-size: cover;
+        height: 100%;
+        font-size: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+        width: 100%;
+    }
 }
-}
-@media screen and (min-width: 100px) {
+
+@media screen and (min-width: 100px) and (max-width:1366px) {
     .content {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
+        height: 100%;
     }
 }
 
@@ -218,7 +244,8 @@ main {
     align-items: center;
     text-align: center;
     border-radius: 150px;
-    box-shadow: 0 0 25px  rgb(145, 149, 173);
+    box-shadow: 0 0 25px rgb(145, 149, 173);
+    filter: blur(10px);
 }
 
 .kepsek {
@@ -256,18 +283,31 @@ main {
 }
 
 /* isi content */
-@media screen and (min-width: 100px) and (max-width:2000px){
-.allisi-content {
-   
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 0;
-    top: 28%;
-    margin-block-start: -13px;
-    margin-top: -28px;
+@media screen and (min-width: 10px) and (max-width:699px) {
+    .allisi-content {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+        top: 16%;
+        margin-block-start: -1px;
+        margin-top: -28px;
+    }
 }
+
+@media screen and (min-width: 700px) and (max-width:2000px) {
+    .allisi-content {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 200%;
+        z-index: 0;
+        top: 28%;
+        margin-block-start: -13px;
+        margin-top: -28px;
+    }
 }
+
 #about {
     color: rgb(145, 149, 173);
     font-size: 25px;
@@ -330,7 +370,7 @@ main {
         text-align: center;
         flex-direction: column;
         width: 100%;
-      
+
         border-radius: 10px;
         border-right: 10px;
         border-left: 10px;
@@ -344,18 +384,32 @@ main {
     box-shadow: 0 0 15px rgb(145, 149, 173);
     position: relative;
     margin-left: 10px;
-    border: 3px solid  rgb(145, 149, 173);
+    border: 3px solid rgb(145, 149, 173);
     margin-top: 10px;
 }
 
 #gambar2 {
     position: static;
     border-radius: 20px;
-    box-shadow: 0 0 15px  rgb(145, 149, 173);
+    box-shadow: 0 0 15px rgb(145, 149, 173);
     position: relative;
     margin-left: 10px;
     border: 3px solid rgb(145, 149, 173);
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1366px) and (min-width:800px) {
+    .content-img {
+        position: relative;
+        top: 35%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content-img {
+        position: relative;
+        top: 20%;
+    }
 }
 
 .judul-achievment {
@@ -363,23 +417,27 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -700px;
+    top: -200px;
     text-align: center;
-}
-@media screen and (max-width: 700px) {
-.achievment {
-    position: absolute;
     color: rgb(145, 149, 173);
-    margin-top: 60%;
-    
 }
+
+@media screen and (max-width: 700px) {
+    .achievment {
+        position: absolute;
+        color: rgb(145, 149, 173);
+        margin-top: 60%;
+
+    }
 }
-@media screen and (max-width: 1366px) and (min-width:800px){
-.achievment {
-    position: relative;
-    top: -5%;
+
+@media screen and (max-width: 1366px) and (min-width:800px) {
+    .achievment {
+        position: relative;
+        top: -5%;
+    }
 }
-}
+
 @media screen and (max-width:700px) and (min-width: 1px) {
     .achievment {
         display: flex;
@@ -538,36 +596,77 @@ main {
     position: relative;
     width: 40%;
     left: 10px;
+    background-color: rgb(145, 149, 173);
 }
 
 #komen {
     height: 100px;
     width: 60%;
+    position: relative;
 }
 
-.contactme {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: 30%;
-    background-color: black;
+@media screen and (min-width: 10px) and (max-width:800px) {
+    .contactme {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 50%;
+
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:1400px) {
+    .contactme {
+        display: fle;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        width: 100%;
+        z-index: 1;
+        background-color: black;
+        margin-top: 70%;
+    }
+}
+
+#contactme {
     color: #ededed;
-    
+
+
 }
 
 .validasi {
     border: 2px solid wheat;
     margin-top: 10px;
-    width: 50%;
+    width: 300px;
     display: block;
     height: 300px;
     margin-left: 20px;
+    background-color: rgb(145, 149, 173);
+
 }
 
-.next-slide {
-    position: relative;
-    margin-top: 50%;
-    right: 40%;
+@media screen and (min-width: 10px) and (max-width:800px) {
+    footer {
+        color: black;
+        position: relative;
+        top: 56%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(145, 149, 173);
+    }
 }
 
+@media screen and (min-width: 800px) and (max-width:1400px) {
+    footer {
+        color: black;
+        position: relative;
+        top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(145, 149, 173);
+    }
+}
